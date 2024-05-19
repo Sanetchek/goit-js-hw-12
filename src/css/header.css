@@ -1,0 +1,31 @@
+.header {
+  padding: 20px 0;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.nav-link {
+  width: 120px;
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  padding: 10px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #000;
+  background-color: #f7df1e;
+  border: 1px solid #f7df1e;
+  font-weight: 700;
+}
