@@ -78,6 +78,16 @@ button {
   cursor: pointer;
 }
 
+button.center {
+  display: block;
+  width: max-content;
+  margin: 40px auto;
+}
+
+button.hidden {
+  display: none;
+}
+
 button.blue {
   background-color: #4e75ff;
 }
@@ -306,6 +316,35 @@ form.search {
   border-radius: 50%;
   border-left: 4px solid #4e75ff;
   border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+
+.loader.white {
+  position: relative;
+  top: unset;
+  left: unset;
+  transform: none;
+  width: 16px;
+  height: 16px;
+  border-top: 2px solid #FFF;
+  border-right: 2px solid transparent;
+}
+
+.loader.hidden {
+  display: none;
+}
+
+.loader.white::after {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid transparent;
   animation: rotation 0.5s linear infinite reverse;
 }
 
